@@ -20,6 +20,7 @@ end
 
 get '/users/landing' do 
 	code = params[:code]
+  p code
 	@results = query_top_tracks(code)
 	erb :'/users/show'
 end
