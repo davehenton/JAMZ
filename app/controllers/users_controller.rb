@@ -28,10 +28,14 @@ get '/login' do
 	erb :'/sessions/login'
 end
 
-get '/albums' do
-	@stuff = query_top_artists
+
+
+get '/artists' do
+	@artists = query_top_artists
 	erb :'/users/show'
 end
+
+
 
 
 get '/logout' do
