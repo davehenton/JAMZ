@@ -1,4 +1,31 @@
-<H1>hi, welcome to your profile page.</H1>
-<h2>click below to start grabbing your playlists from spotify.</h2>
-<a href= "/login">spotify</a>
-<p> <%=current_user.name %></p>
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $("#show_artist").click(function(){
+        $("artists").append("");
+    });
+});
+</script>
+</head>
+<body>
+<h1>Hi, welcome to your profile page, <%=current_user.name %></h1>
+
+<a href= "https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_API_KEY']%>&response_type=code&redirect_uri=http://localhost:9393/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email">Click here to view your top tracks on Spotify.</a><br>
+<a href= "/albums">Click here to view your top artists on Spotify.</a><br>
+<button id="show_artist">Show Artists</button>
+
+<p id="num1"><%=@results[1]%></p>
+<p id="num2"><%=@results[3]%></p>
+<p id="num3"><%=@results[2]%></p>
+<p id="num4"><%=@results[0]%></p>
+
+
+</body>
+</html>
+
+
+
+
