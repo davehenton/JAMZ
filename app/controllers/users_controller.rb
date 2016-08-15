@@ -34,6 +34,14 @@ get 'http://still-island-96987.herokuapp.com/users/landing' do
   erb :'/users/show'
 end
 
+get 'http://still-island-96987.herokuapp.com/users/landing' do 
+  code = params[:code]
+    p "*" * 50
+  p code
+  @results = query_top_tracks(code)
+  erb :'/users/show'
+end
+
 
 
 get '/users/landing' do 
