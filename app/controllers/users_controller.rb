@@ -24,11 +24,6 @@ get '/users/landing' do
 	erb :'/users/show'
 end
 
-get '/login' do
-	erb :'/sessions/login'
-end
-
-
 
 get '/artists' do
 	if request.xhr?
@@ -39,20 +34,16 @@ end
 end
 
 
-
-
-get '/logout' do
-	logout
-	redirect '/'
-end
-
-
-
 get '/users/:id' do
   if session[:user_id]
     @user = User.find(session[:user_id])
-  end
   erb :'/users/show'
+  end
 end
+
+get '/users/test' do
+  erb ':/users/test'
+end
+
 
 

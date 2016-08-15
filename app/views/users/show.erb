@@ -1,12 +1,23 @@
-<h1>Hi, welcome to your profile page.</h1>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>my JAMZ/title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  	<div class="container"> -->
+		<h3>Hi, welcome to your profile page.</h3>
+			<p><%=@artists%></p>
+			<p><%=@results%></p>
+			<p id="testAJ"></p>
+	</div>
 
 <a href= "https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_API_KEY']%>&response_type=code&redirect_uri=http://still-island-96987.herokuapp.com/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email">Click here to view your top tracks on Spotify.</a><br>
 <a id="show_artist" href= "/artists">Click here to show the top artist on Spotify.</a><br>
-
-<p><%=@artists%></p>
-<p><%=@results%></p>
-<p id="testAJ"></p>
-
 </body>
 </html>
 
