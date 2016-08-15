@@ -6,6 +6,7 @@ get '/users/new' do
   erb :'/users/new'
 end
 
+
 post '/users/new' do
   @user = User.new(params)
   if @user.save
@@ -16,6 +17,14 @@ post '/users/new' do
     erb :'/users/new'
   end
 end
+
+get '/http://still-island-96987.herokuapp.com/users/landing'
+  code = params[:code]
+  p code
+  @results = query_top_tracks(code)
+  erb :'/users/show'
+end
+
 
 
 get '/users/landing' do 
