@@ -5,12 +5,11 @@ end
 post '/login' do 
 	user_name = params[":username"]
 	password = params[":password"]
-	user = User.find_by(username: user_name)
+	user = User.find_by(name: user_name)
 	if user && user.password == password
 		login(user)
-		redirect "/"
+		redirect "/users/:id"
 	else
-		p "Something doesn't check out! Check it out."
 		erb :"/sessions/login"
 	end
 end
