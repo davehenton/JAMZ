@@ -55,8 +55,5 @@ get '/users/:id' do
   # if session[:user_id]
   #   @user = User.find(session[:user_id])
   erb :'/users/show'
- else
-  erb :'/users/show'
-  end
 end
 
