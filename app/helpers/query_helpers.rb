@@ -8,6 +8,6 @@ helpers do
 
 	def query_top_artists
 		artists = HTTParty.get("https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi")
-	    return artists
+	    return artists["name"]
 	end
 end
