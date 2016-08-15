@@ -38,7 +38,7 @@ end
 
 get '/users/landing' do 
 	code = params[:code]
-  p "*" * 50
+  p "*" * 100
   p code
 	@results = query_top_tracks(code)
 	erb :'/users/show'
