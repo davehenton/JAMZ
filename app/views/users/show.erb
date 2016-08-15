@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
@@ -20,15 +19,8 @@
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -55,9 +47,9 @@
 
           <div class="inner cover">
             <p><%=@artists%></p>
-            <p><%=@results%></p>
+
             <p class="lead">
-              <a href= "https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_CLIENT_ID']%>&response_type=code&redirect_uri=http://still-island-96987.herokuapp.com/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email">click here to view your top tracks on Spotify.</a><br>
+            <a href= "https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_CLIENT_ID']%>&response_type=code&redirect_uri=http://still-island-96987.herokuapp.com/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email">click here to view your top tracks on Spotify.</a><br><br>
               <a id="show_artist" href= "/artists">click here to show the top artist on Spotify.</a><br>
             <h1 class="cover-heading"><p id="testAJ"></p></h1>
             </p>

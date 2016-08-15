@@ -2,6 +2,9 @@ require 'httparty'
 require 'json'
 require 'pp'
 
+
+#as soon as i can get oAuth working on the deployed version of this app, i'll have the oAuth login also route to a creation of a new user in my own database. 
+#Until then, I've got a clunky mess where you have to sign up for my own site and then sign in again via oAuth to spotify.
 get '/users/new' do
   erb :'/users/new'
 end
@@ -18,30 +21,42 @@ post '/users/new' do
   end
 end
 
-get '/http://still-island-96987.herokuapp.com/users/landing' do 
-  code = params[:code]
-  p code
-  p "*" * 50
-  @results = query_top_tracks(code)
-  erb :'/users/show'
-end
 
-get 'http://still-island-96987.herokuapp.com/users/landing' do 
-  code = params[:code]
-    p "*" * 50
-  p code
-  @results = query_top_tracks(code)
-  erb :'/users/show'
-end
+#these are all routes that i've tested to try to get the callback to my heroku URI to work
+#
+# get '/http://still-island-96987.herokuapp.com/users/landing' do 
+#   code = params[:code]
+#   p code
+#   p "*" * 50
+#   @results = query_top_tracks(code)
+#   erb :'/users/show'
+# end
 
-get 'http://still-island-96987.herokuapp.com/users/landing' do 
-  code = params[:code]
-    p "*" * 50
-  p code
-  @results = query_top_tracks(code)
-  erb :'/users/show'
-end
+# get 'http://still-island-96987.herokuapp.com/users/landing' do 
+#   code = params[:code]
+#     p "*" * 50
+#   p code
+#   @results = query_top_tracks(code)
+#   erb :'/users/show'
+# end
 
+# get 'https://still-island-96987.herokuapp.com/users/landing' do 
+#   code = params[:code]
+#     p "*" * 50
+#   p code
+#   @results = query_top_tracks(code)
+#   erb :'/users/show'
+# end
+
+#get "/oauth/callback" do 
+#response == Instagram.get_access_token(params[:code], redirect_uri => CALLBACK_URL)
+#user_info = response['user'].to_h
+#user_info['insagram_id'] = response['id']
+
+# unless User.find_by(instagram_id: user_id)
+#   User.create(user_info)
+# end
+#session[:access_token] = response[:access_token]
 
 
 get '/users/landing' do 
