@@ -22,31 +22,6 @@ post '/users/new' do
 end
 
 
-#these are all routes that i've tested to try to get the callback to my heroku URI to work
-#
-# get '/http://still-island-96987.herokuapp.com/users/landing' do 
-#   code = params[:code]
-#   p code
-#   p "*" * 50
-#   @results = query_top_tracks(code)
-#   erb :'/users/show'
-# end
-
-# get 'http://still-island-96987.herokuapp.com/users/landing' do 
-#   code = params[:code]
-#     p "*" * 50
-#   p code
-#   @results = query_top_tracks(code)
-#   erb :'/users/show'
-# end
-
-# get 'https://still-island-96987.herokuapp.com/users/landing' do 
-#   code = params[:code]
-#     p "*" * 50
-#   p code
-#   @results = query_top_tracks(code)
-#   erb :'/users/show'
-# end
 
 #get "/oauth/callback" do 
 #response == Instagram.get_access_token(params[:code], redirect_uri => CALLBACK_URL)
@@ -76,6 +51,9 @@ get '/artists' do
 end
 end
 
+get '/users/test' do
+  erb ':/users/test'
+end
 
 get '/users/:id' do
   if session[:user_id]
@@ -84,9 +62,6 @@ get '/users/:id' do
   end
 end
 
-get '/users/test' do
-  erb ':/users/test'
-end
 
 
 
