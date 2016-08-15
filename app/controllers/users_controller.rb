@@ -31,8 +31,11 @@ end
 
 
 get '/artists' do
-	@artists = query_top_artists
+	if request.xhr?
+	query_top_artists
+	else
 	erb :'/users/show'
+end
 end
 
 

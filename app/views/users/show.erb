@@ -1,16 +1,14 @@
-
-<h1>Hi, welcome to your profile page/</h1>
+<h1>Hi, welcome to your profile page.</h1>
 
 <a href= "https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_API_KEY']%>&response_type=code&redirect_uri=http://still-island-96987.herokuapp.com/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email">Click here to view your top tracks on Spotify.</a><br>
-<a href= "/artists">Click here to view your top artists on Spotify.</a><br>
-<button id="show_artist">Show Artists</button>
+<a id="show_artist" href= "/artists">Click here to show the top artist on Spotify.</a><br>
 
 <p><%=@artists%></p>
-<P><%=@results%></p>
+<p><%=@results%></p>
+<p id="testAJ"></p>
 
 </body>
 </html>
-
 
 
 
