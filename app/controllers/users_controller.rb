@@ -47,19 +47,15 @@ get '/artists' do
   query_top_artists
   else
   erb :'/users/show'
-end
-end
-
-get '/users/test' do
-  erb ':/users/test'
+  end
 end
 
 
 get '/users/:id' do
-  if session[:user_id]
-    @user = User.find(session[:user_id])
+  # if session[:user_id]
+  #   @user = User.find(session[:user_id])
   erb :'/users/show'
-else
+ else
   erb :'/users/show'
   end
 end
