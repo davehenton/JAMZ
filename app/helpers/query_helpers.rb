@@ -1,6 +1,6 @@
 helpers do
 	def query_top_tracks(token_code)
-		token_response = HTTParty.post("https://accounts.spotify.com/api/token", body: { grant_type:"authorization_code", code: token_code, redirect_uri: "http://localhost:9393/users/landing", client_id: ENV['SPOTIFY_CLIENT_ID'], client_secret: ENV['SPOTIFY_CLIENT_SECRET'] }, header: { authorization: "code" })
+		token_response = HTTParty.post("https://accounts.spotify.com/api/token", body: { grant_type:"authorization_code", code: token_code, redirect_uri: "https://still-island-96987.herokuapp.com/users/landing", client_id: ENV['SPOTIFY_CLIENT_ID'], client_secret: ENV['SPOTIFY_CLIENT_SECRET'] }, header: { authorization: "code" })
 		p "*" * 50 
 		p "*" * 50 
 		p "Token Response Things"
