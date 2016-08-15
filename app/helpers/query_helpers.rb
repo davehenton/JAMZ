@@ -7,7 +7,7 @@ helpers do
 	end
 
 	def query_top_artists
-		artists = HTTParty.get("https://api.spotify.com/v1/albums/382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc")
+		artists = HTTParty.get("https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi")
 	    return artists
 	end
 end
