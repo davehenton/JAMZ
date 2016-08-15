@@ -18,7 +18,7 @@ post '/users/new' do
   end
 end
 
-get '/http://still-island-96987.herokuapp.com/users/landing'
+get '/http://still-island-96987.herokuapp.com/users/landing' do 
   code = params[:code]
   p code
   @results = query_top_tracks(code)
