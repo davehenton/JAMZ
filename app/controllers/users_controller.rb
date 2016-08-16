@@ -22,21 +22,9 @@ post '/users/new' do
 end
 
 
-#get "/oauth/callback" do 
-#response == Instagram.get_access_token(params[:code], redirect_uri => CALLBACK_URL)
-#user_info = response['user'].to_h
-#user_info['insagram_id'] = response['id']
-
-# unless User.find_by(instagram_id: user_id)
-#   User.create(user_info)
-# end
-#session[:access_token] = response[:access_token]
-
 
 get '/users/landing' do 
   code = params[:code]
-  p "*" * 100
-  p code
   @results = query_top_tracks(code)
   erb :'/users/show'
 end
@@ -44,16 +32,21 @@ end
 
 get '/artists' do
   if request.xhr?
-  query_top_artists
+    query_top_artists
   else
-  erb :'/users/show'
+    erb :'/users/show'
   end
 end
 
 
 get '/users/:id' do
-  # if session[:user_id]
-  #   @user = User.find(session[:user_id])
-  erb :'/users/show'
+  if session[:user_id]
+    @user = User.find(session[:user_id])
+    erb :'/users/show'
+  else
+    redirect '/users/new'
+  end
 end
+
+
 

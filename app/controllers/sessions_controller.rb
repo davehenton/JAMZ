@@ -14,7 +14,10 @@ post '/login' do
 	end
 end
 
+post '/sessions' do 
+	
+end
 
-get "/logout" do
+get '/logout' do
 	redirect '/'
 end

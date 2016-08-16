@@ -12,3 +12,16 @@
                              <p><%=@results %></p>
           <p><%=@results[0][0] + " - " + @results[0][1]%></p><br>
             <p><%=@results[0][2] + " - " + @results[0][3]%></p><br>
+
+
+
+            
+#get "/oauth/callback" do 
+#response == Instagram.get_access_token(params[:code], redirect_uri => CALLBACK_URL)
+#user_info = response['user'].to_h
+#user_info['insagram_id'] = response['id']
+
+# unless User.find_by(instagram_id: user_id)
+#   User.create(user_info)
+# end
+#session[:access_token] = response[:access_token]
