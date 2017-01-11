@@ -14,11 +14,12 @@
   <title>JAMZ</title>
 </head>
 <body>
- <% if current_user %>        
+ <% if current_user %>
  <% else %>
     <a href="users/new">SignUp</a>
     <a href="/login">Login</a>
 <% end %>
   <%= yield %>
+  <h3> but what about this </h3>
 </body>
 </html>
