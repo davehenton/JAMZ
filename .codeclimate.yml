@@ -1,41 +1,29 @@
----
 engines:
-  brakeman:
+  rubocop:
     enabled: true
-  bundler-audit:
+  golint:
+    enabled: false
+  gofmt:
     enabled: true
+  eslint:
+    enabled: false
   csslint:
     enabled: true
   duplication:
     enabled: true
-    config:
-      languages:
-      - ruby
-      - javascript
-      - python
-      - php
-  eslint:
-    enabled: true
-  fixme:
-    enabled: true
-  rubocop:
-    enabled: true
-ratings:
-  paths:
-  - Gemfile.lock
-  - "**.erb"
-  - "**.haml"
-  - "**.rb"
-  - "**.rhtml"
-  - "**.slim"
-  - "**.css"
-  - "**.inc"
-  - "**.js"
-  - "**.jsx"
-  - "**.module"
-  - "**.php"
-  - "**.py"
+    config: 
+    languages:
+      ruby:
+      javascript:
+
+
+ ratings:
+   paths:
+   - app/**
+   - lib/**
+   - "**.rb"
+   - "**.go"
+
 exclude_paths:
-- config/
-- db/
-- spec/
+  - spec/**/*
+  - vendor/**/*
