@@ -21,6 +21,34 @@ engines:
         enabled: true
       max-lines:
         enabled: true
+      block-spacing: 
+        enabled: false
+      brace-style: 
+        enabled: false
+      comma-dangle: 
+       enabled: false 
+      comma-style: 
+        enabled: false
+      complexity: 
+        enabled: false
+      curly:
+        enabled: false
+      eqeqeq: 
+        enabled: false
+      no-shadow-restricted-names:
+        enabled: false
+      no-undef:
+        enabled: false
+      no-use-before-define:
+        enabled: false
+      radix: 
+        enabled: false
+      semi: 
+        enabled: false
+      space-infix-ops:
+        enabled: false
+      strict: 
+        enabled: false
   brakeman:
     enabled: false
   bundler-audit:
