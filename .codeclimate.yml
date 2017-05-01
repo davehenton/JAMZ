@@ -50,7 +50,7 @@ engines:
       strict: 
         enabled: false
   brakeman:
-    enabled: false
+    enabled: true
   bundler-audit:
     enabled: true
   golint:
