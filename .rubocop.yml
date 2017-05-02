@@ -1,5 +1,5 @@
 AllCops:
-  DisabledByDefault: false
+  DisabledByDefault: true
 
 #################### Lint ################################
 
@@ -256,7 +256,7 @@ Metrics/PerceivedComplexity:
                  A complexity metric geared towards measuring complexity for a
                  human reader.
   Enabled: false
-  
+
 ##################### Performance #############################
 
 Performance/Count:
