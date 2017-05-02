@@ -12,6 +12,8 @@ engines:
           enabled: true
   eslint:
     enabled: true
+    config:
+      ignore_warnings: true
     checks:
       complexity:
         enabled: true
