@@ -1,4 +1,4 @@
-engines:
+Xengines:
   rubocop:
     enabled: true
     checks:
