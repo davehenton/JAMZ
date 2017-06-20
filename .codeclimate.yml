@@ -35,6 +35,9 @@ engines:
 
 ratings:
    paths:
+    - "**.rb"
+    - "**.go"
+    - "**.js"
 
 exclude_paths:
   - spec/**/*
