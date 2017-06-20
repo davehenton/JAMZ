@@ -35,11 +35,6 @@ engines:
 
 ratings:
    paths:
-   - app/**
-   - lib/**
-   - "**.rb"
-   - "**.go"
-   - "**.js"
 
 exclude_paths:
   - spec/**/*
