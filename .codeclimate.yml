@@ -1,33 +1,24 @@
 engines:
   rubocop:
-    enabled: true
-    checks:
-        Rubocop/Metrics/CyclomaticComplexity:
-          enabled: true
-        Rubocop/Metrics/ParameterLists:
-          enabled: true
-        Rubocop/Cop/TooManyLines:
-          enabled: true
-        Rubocop/Metrics/ClassLength:
-          enabled: true
+    enabled: false
   eslint:
-    enabled: true
+    enabled: false
     config:
       ignore_warnings: true
   brakeman:
-    enabled: true
+    enabled: false
   bundler-audit:
-    enabled: true
+    enabled: false
   golint:
     enabled: false
   gofmt:
-    enabled: true
+    enabled: false
   eslint:
     enabled: false
   csslint:
     enabled: false
   duplication:
-    enabled: true
+    enabled: false
     config:
       languages:
       - ruby:
