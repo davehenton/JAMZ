@@ -3,7 +3,7 @@ engines:
     enabled: false
   eslint:
     enabled: true
-    channel: "eslint-2"
+    channel: "eslint-3"
     config:
       ignore_warnings: true
   brakeman:
