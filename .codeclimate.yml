@@ -2,7 +2,7 @@ engines:
   rubocop:
     enabled: false
   eslint:
-    enabled: false
+    enabled: true
     config:
       ignore_warnings: true
   brakeman:
