@@ -15,7 +15,7 @@ engines:
   gofmt:
     enabled: false
   eslint:
-    enabled: false
+    enabled: true
   csslint:
     enabled: false
   duplication:
