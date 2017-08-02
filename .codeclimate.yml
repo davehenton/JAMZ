@@ -10,8 +10,6 @@ engines:
     enabled: false
   bundler-audit:
     enabled: false
-  golint:
-    enabled: false
   gofmt:
     enabled: false
   eslint:
