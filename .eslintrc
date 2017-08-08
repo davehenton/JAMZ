@@ -4,7 +4,7 @@
     "mocha": true
   },
   "rules": {
-    "jsx-a11y/href-no-hash": [ 2, "Link" ],
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
     "semi": 0
   },
 }
