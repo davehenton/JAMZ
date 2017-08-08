@@ -1,6 +1,7 @@
 ---
 engines:
   eslint:
+    channel: "eslint-4"
     enabled: true
 ratings:
   paths:
