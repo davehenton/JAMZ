@@ -2,6 +2,9 @@
 engines:
   eslint:
     enabled: true
+    channel: "eslint-4"
+  phpcodesniffer:
+    enabled: true
 ratings:
   paths:
   - Gemfile.lock
