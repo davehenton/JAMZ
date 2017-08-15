@@ -1,24 +1,22 @@
 engines:
-  csslint:
-    enabled: true
   duplication:
     enabled: true
     config:
       languages:
-      - ruby
       - javascript
-      - python
-      - php
   eslint:
     enabled: true
+    channel: "eslint-4"
+    checks:
+      import/no-unresolved:
+        enabled: false
   fixme:
     enabled: true
 ratings:
   paths:
-  - "**.css"
-  - "**.inc"
+  - "src/**"
   - "**.js"
-  - "**.jsx"
-  - "**.module"
-  - "**.php"
-  - "**.py"
+exclude_paths:
+- tests/**/*
+- dist/**/*
+- node_modules/**/*
