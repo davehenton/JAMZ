@@ -1,18 +1,20 @@
----
 engines:
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+      - javascript
+      - python
+      - php
   eslint:
     enabled: true
-    channel: "eslint-4"
-  phpcodesniffer:
+  fixme:
     enabled: true
 ratings:
   paths:
-  - Gemfile.lock
-  - "**.erb"
-  - "**.haml"
-  - "**.rb"
-  - "**.rhtml"
-  - "**.slim"
   - "**.css"
   - "**.inc"
   - "**.js"
@@ -20,7 +22,3 @@ ratings:
   - "**.module"
   - "**.php"
   - "**.py"
-exclude_paths:
-- config/
-- db/
-- spec/
