@@ -1,17 +1,7 @@
 engines:
-  duplication:
+  rubocop:
     enabled: true
-    config:
-      languages:
-      - javascript
-  eslint:
-    enabled: true
-    channel: "eslint-4"
-    checks:
-      import/no-unresolved:
-        enabled: false
-  fixme:
-    enabled: true
+    channel: "rubocop-0-49"
 ratings:
   paths:
   - "src/**"
