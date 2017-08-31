@@ -1,5 +1,5 @@
 engines:
   rubocop:
-    channel: rubocop-0-48
+    channel: rubocop-0-46
     enabled: true
   
