@@ -1,6 +1,8 @@
 engines:
-  rubocop:
+  eslint:
     enabled: true
+  rubocop:
+    enabled: false
 exclude_paths:
 - "app/helpers/"
 
