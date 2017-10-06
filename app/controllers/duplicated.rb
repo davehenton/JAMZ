@@ -1,17 +1,15 @@
 def describe
-  first_name + " " + middle_name + " " + last_name + " (" + age + years old), lives
+  first_name +  middle_name + last_name
 end
 
 def describe
-  first_name + " " + middle_name + " " + last_name + " (" + age + years old), lives
+  first_name +  middle_name + last_name
 end
 
-
 def describe
-  first_name + " " + middle_name + " " + last_name + " (" + age + years old), lives
+  first_name +  middle_name + last_name
 end
 
-
 def describe
-  first_name + " " + middle_name + " " + last_name + " (" + age + years old), lives
+  first_name +  middle_name + last_name
 end
