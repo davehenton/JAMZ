@@ -1,24 +1,36 @@
 version: "2"
 checks:
-  argument-count:
-    enabled: false
-  complex-logic:
-    enabled: false
   file-lines:
-    enabled: false
-  method-complexity:
-    enabled: false
-  method-count:
-    enabled: false
-  method-lines:
-    enabled: false
-  nested-control-flow:
-    enabled: false
-  return-statements:
-    enabled: false
-  similar-code:
-    enabled: false
-  identical-code:
-    enabled: false
-exclude_patterns:
-  - "app/"
+  config:
+    threshold: 150
+engines:
+  brakeman:
+    enabled: true
+  bundler-audit:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: true
+    checks:
+      Rubocop/Style/PercentLiteralDelimiters:
+        enabled: false
+      Rubocop/Style/ClassAndModuleChildren:
+        enabled: false
+      Rubocop/Style/Documentation:
+        enabled: false
+      Rubocop/Style/FrozenStringLiteralComment:
+        enabled: false
+      Rubocop/Metrics/LineLength:
+        enabled: true
+        Max: 150
+exclude_paths:
+- config/
+- db/
+- spec/
+- Gemfile
