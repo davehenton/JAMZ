@@ -1,0 +1,44 @@
+version: "2"
+checks:
+argument-count:
+  config:
+    enabled: true
+    severity: info
+complex-logic:
+  config:
+    enabled: true
+    severity: info
+file-lines:
+  config:
+    enabled: true
+    severity: info
+method-complexity:
+  config:
+    enabled: true
+    severity: info
+method-count:
+  config:
+    enabled: true
+    severity: info
+method-lines:
+  config:
+    enabled: true
+    severity: info
+nested-control-flow:
+  config:
+    enabled: true
+    severity: info
+return-statements:
+  config:
+    enabled: true
+    severity: info
+similar-code:
+  config:
+    enabled: true
+    severity: info
+identical-code:
+  config:
+    enabled: true
+    severity: info
+     issue_override:
+      severity: info
