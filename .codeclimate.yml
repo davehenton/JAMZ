@@ -57,5 +57,5 @@ similar-code:
 identical-code:
   config:
     enabled: true
-     issue_override:
+    issue_override:
       severity: info
