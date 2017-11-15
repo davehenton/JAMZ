@@ -20,4 +20,5 @@ checks:
     enabled: false
   identical-code:
     enabled: false
-
+exclude_patterns:
+  - "app/"
