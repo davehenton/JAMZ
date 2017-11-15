@@ -43,10 +43,19 @@ return-statements:
 similar-code:
   config:
     enabled: true
+    issue_override:
+      severity: info
+identical-code:
+  config:
+    enabled: true
+    issue_override:
+      severity: info
+similar-code:
+  config:
+    enabled: true
     severity: info
 identical-code:
   config:
     enabled: true
-    severity: info
      issue_override:
       severity: info
