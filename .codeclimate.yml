@@ -1,6 +1,5 @@
 version: "2"
 checks:
-argument-count:
   config:
     enabled: true
     issue_override:
