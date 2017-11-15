@@ -3,35 +3,43 @@ checks:
 argument-count:
   config:
     enabled: true
-    severity: info
+    issue_override:
+      severity: info
 complex-logic:
   config:
     enabled: true
-    severity: info
+    issue_override:
+      severity: info
 file-lines:
   config:
     enabled: true
-    severity: info
+    issue_override:
+      severity: info
 method-complexity:
   config:
     enabled: true
-    severity: info
+    issue_override:
+      severity: info
 method-count:
   config:
     enabled: true
-    severity: info
+    issue_override:
+      severity: info
 method-lines:
   config:
     enabled: true
-    severity: info
+    issue_override:
+      severity: info
 nested-control-flow:
   config:
     enabled: true
-    severity: info
+    issue_override:
+      severity: info
 return-statements:
   config:
     enabled: true
-    severity: info
+    issue_override:
+      severity: info
 similar-code:
   config:
     enabled: true
