@@ -5,9 +5,9 @@ plugins:
     config:
       languages:
         javascript:
-          mass_threshold: 70
+          mass_threshold: 5
         ruby:
-          mass_threshold: 70
+          mass_threshold: 5
 exclude_patterns:
 - "app/loops/"
 - "bin/"
