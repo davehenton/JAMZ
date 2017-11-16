@@ -1,9 +1,5 @@
 version: "2"
-checks:
-  file-lines:
-    config:
-     threshold: 150
-engines:
+plugins:
   brakeman:
     enabled: true
   bundler-audit:
@@ -26,10 +22,12 @@ engines:
         enabled: false
       Rubocop/Style/FrozenStringLiteralComment:
         enabled: false
+      Rubocop/Style/LambdaCall:
+        enabled: false
       Rubocop/Metrics/LineLength:
         enabled: true
         Max: 150
-exclude_paths:
+exclude_patterns:
 - config/
 - db/
 - spec/
