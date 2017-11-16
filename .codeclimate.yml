@@ -5,7 +5,7 @@ plugins:
     checks:
       Rubocop/Metrics/LineLength:
         enabled: true
-        Max: 150
+          Max: 150
 exclude_patterns:
 - config/
 - db/
