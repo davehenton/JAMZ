@@ -1,29 +1,8 @@
 version: "2"
 plugins:
-  brakeman:
-    enabled: true
-  bundler-audit:
-    enabled: true
-  duplication:
-    enabled: true
-    config:
-      languages:
-      - ruby
-  fixme:
-    enabled: true
   rubocop:
     enabled: true
     checks:
-      Rubocop/Style/PercentLiteralDelimiters:
-        enabled: false
-      Rubocop/Style/ClassAndModuleChildren:
-        enabled: false
-      Rubocop/Style/Documentation:
-        enabled: false
-      Rubocop/Style/FrozenStringLiteralComment:
-        enabled: false
-      Rubocop/Style/LambdaCall:
-        enabled: false
       Rubocop/Metrics/LineLength:
         enabled: true
         Max: 150
