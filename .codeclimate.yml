@@ -3,7 +3,7 @@ plugins:
   rubocop:
     enabled: true
     checks:
-      Rubocop/Metrics/LineLength:
+      Metrics/LineLength:
         enabled: true
           Max: 150
 exclude_patterns:
