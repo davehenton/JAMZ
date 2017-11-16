@@ -1,9 +1,52 @@
 version: "2"
+checks:
+  method-lines:
+    config:
+      threshold: 25
 plugins:
-  rubocop:
+  brakeman:
     enabled: true
+  bundler-audit:
+    enabled: true
+  csslint:
+    enabled: true
+  coffeelint:
+    enabled: false
+  duplication:
+    enabled: true
+    config:
+      languages:
+        javascript:
+          mass_threshold: 70
+        ruby:
+          mass_threshold: 70
+  eslint:
+    enabled: true
+    channel: "eslint-2"
+    config:
+      config: .eslintrc
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: false
+  watson:
+    enabled: false
 exclude_patterns:
-- config/
-- db/
-- spec/
-- Gemfile
+- "app/loops/"
+- "bin/"
+- "config/"
+- "coverage/"
+- "db/"
+- "lib/tasks"
+- "log/"
+- "public/"
+- "script/"
+- "spec/"
+- "spec.old/"
+- "syflrecommenders"
+- "tmp/"
+- "webpack/node_modules"
+- "webpack/karma.conf.js"
+- "webpack/postcss.config.js"
+- "webpack/spec.bundle.js"
+- "webpack/**/*.spec.js"
