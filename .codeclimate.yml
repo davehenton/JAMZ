@@ -2,10 +2,6 @@ version: "2"
 plugins:
   rubocop:
     enabled: true
-    checks:
-      Metrics/LineLength:
-        enabled: true
-          Max: 150
 exclude_patterns:
 - config/
 - db/
