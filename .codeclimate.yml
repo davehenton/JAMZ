@@ -1,29 +1,5 @@
-version: "2"
-plugins:
-  duplication:
-    enabled: true
-    config:
-      languages:
-        javascript:
-          mass_threshold: 2
-        ruby:
-          mass_threshold: 2
-exclude_patterns:
-- "app/loops/"
-- "bin/"
-- "config/"
-- "coverage/"
-- "db/"
-- "lib/tasks"
-- "log/"
-- "public/"
-- "script/"
-- "spec/"
-- "spec.old/"
-- "syflrecommenders"
-- "tmp/"
-- "webpack/node_modules"
-- "webpack/karma.conf.js"
-- "webpack/postcss.config.js"
-- "webpack/spec.bundle.js"
-- "webpack/**/*.spec.js"
+checks:
+  argument-count:
+    enabled: false
+  complex-logic:
+    enabled: false
