@@ -6,3 +6,4 @@ checks:
 plugins:
   eslint:
     enabled: true
+    channel: "eslint-4"
