@@ -3,3 +3,6 @@ checks:
     enabled: false
   complex-logic:
     enabled: false
+plugins:
+  eslint:
+    enabled: true
