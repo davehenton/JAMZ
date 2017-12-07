@@ -1,6 +1,6 @@
 > **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
 
-### Purpose
+### Purposetest
 The Sinatra Skeleton:
 
 1. Provides a foundation for building challenges or creating a new Sinatra application.
@@ -32,4 +32,3 @@ Be prepared to give and receive specific, actionable, and kind feedback!
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c9ffa8f022d3dc81b705/test_coverage)](https://codeclimate.com/repos/59370df93a82500264000033/test_coverage)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5414ccc4e7a1f5e38c79/maintainability)](https://codeclimate.com/github/rastating/wordpress-exploit-framework/maintainability)
-
