@@ -27,7 +27,7 @@
     ],
     "rules": {
         "indent": [2, "tab", {"SwitchCase": 1}],
-			  "no-constant-condition": [ "off", { "checkLoops": false } ],
+	"no-constant-condition": [ "off", { "checkLoops": false } ],
         "arrow-body-style": [1, "as-needed"],
         "arrow-parens": 2,
         "arrow-spacing": [2, { "before": true, "after": true }],
