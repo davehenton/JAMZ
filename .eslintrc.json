@@ -1,0 +1,62 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "arrowFunctions": true,
+            "blockBindings": true,
+            "classes": true,
+            "defaultParams": true,
+            "destructuring": true,
+            "forOf": false,
+            "generators": false,
+            "modules": true,
+            "objectLiteralComputedProperties": true,
+            "objectLiteralDuplicateProperties": false,
+            "objectLiteralShorthandMethods": true,
+            "objectLiteralShorthandProperties": true,
+            "restParams": true,
+            "spread": true,
+            "superInFunctions": true,
+            "templateStrings": true,
+            "jsx": false
+        }
+    },
+    "plugins": [
+        "security"
+    ],
+    "rules": {
+        "indent": [2, "tab", {"SwitchCase": 1}],
+			  "no-constant-condition": [ "off", { "checkLoops": false } ],
+        "arrow-body-style": [1, "as-needed"],
+        "arrow-parens": 2,
+        "arrow-spacing": [2, { "before": true, "after": true }],
+        "complexity": 1,
+        "constructor-super": 0,
+        "generator-star-spacing": 0,
+        "no-confusing-arrow": 1,
+        "no-class-assign": 0,
+        "no-const-assign": 2,
+        "no-dupe-class-members": 2,
+        "no-this-before-super": 1,
+        "no-var": 0,
+        "object-shorthand": 0,
+        "prefer-arrow-callback": 1,
+        "prefer-const": 1,
+        "prefer-reflect": 0,
+        "prefer-spread": 0,
+        "prefer-template": 1,
+        "template-curly-spacing": 2,
+        "require-yield": 1,
+        "security/detect-eval-with-expression": 1,
+        "security/detect-non-literal-regexp": 1,
+        "security/detect-non-literal-require": 1,
+        "security/detect-object-injection": 0,
+        "security/detect-possible-timing-attacks": 1,
+        "security/detect-pseudoRandomBytes": 1
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    }
+}
