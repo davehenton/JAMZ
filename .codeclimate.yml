@@ -1,3 +1,6 @@
 version: "2"
+plugins:
+  FIXME:
+    enabled: true
 exclude_patterns:
 - "public/js/**.js"
