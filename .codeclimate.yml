@@ -3,4 +3,4 @@ plugins:
   FIXME:
     enabled: true
 exclude_patterns:
-- "app/*.rb"
+- "app/**/*.rb"
