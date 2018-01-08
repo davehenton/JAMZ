@@ -1,6 +1,6 @@
 version: "2"
 plugins:
-  FIXME:
+  fixme:
     enabled: true
 exclude_patterns:
 - "app/**/*.rb"
