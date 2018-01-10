@@ -6,4 +6,4 @@ plugins:
     enabled: true
     channel: "rubocop-0-51"
 exclude_patterns:
-- "spec/**/*.rb"
+- "!test.rb"
