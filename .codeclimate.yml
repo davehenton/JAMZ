@@ -23,7 +23,6 @@ checks:
 plugins:
   rubocop:
     enabled: true
-    channel: "rubocop-0-51"
   duplication:
     enabled: false
   structure:
