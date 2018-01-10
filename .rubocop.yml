@@ -1,3 +1,23 @@
-Metrics/LineLength:
-  Enabled: true
-  Max: 150
+# At the time of writing (2018-01-05), we use Code Climate to run RuboCop.
+# Or you can "gem install rubocop" and run the command "rubocop" locally.
+
+AllCops:
+  DisabledByDefault: true
+# Allow:
+#
+# foo.
+# bar
+#
+# Disallow:
+#
+# foo
+# .bar
+#
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+# Allow: "foo"
+# Disallow: 'foo'
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
