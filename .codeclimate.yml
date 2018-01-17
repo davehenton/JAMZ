@@ -24,4 +24,4 @@ plugins:
   fixme:
     enabled: true
 exclude_patterns:
-- "spec/other/stuff1/stuff2"
+- "spec/other/stuff1/stuff2/"
