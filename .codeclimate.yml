@@ -21,11 +21,7 @@ checks:
   identical-code:
     enabled: false
 plugins:
-  rubocop:
+  fixme:
     enabled: true
-  duplication:
-    enabled: false
-  structure:
-    enabled: false
 exclude_patterns:
-- "**/test.rb"
+- "spec/other/stuff1/stuff2"
