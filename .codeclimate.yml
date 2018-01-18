@@ -23,5 +23,7 @@ checks:
 plugins:
   fixme:
     enabled: true
+  rubocop:
+    enabled: true
 exclude_patterns:
 - "spec/other/stuff1/stuff2/"
