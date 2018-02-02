@@ -27,6 +27,6 @@ plugins:
     enabled: true
     channel: "eslint-4"
   rubocop:
-    enabled: true
+    enabled: false
 exclude_patterns:
-- "spec/other/stuff1/stuff2/"
+- "!ramda.js"
