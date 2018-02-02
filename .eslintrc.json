@@ -23,7 +23,8 @@
         }
     },
     "plugins": [
-        "security"
+        "security", 
+	"eslint-plugin-ramda"
     ],
     "rules": {
         "indent": [2, "tab", {"SwitchCase": 1}],
@@ -53,7 +54,8 @@
         "security/detect-non-literal-require": 1,
         "security/detect-object-injection": 0,
         "security/detect-possible-timing-attacks": 1,
-        "security/detect-pseudoRandomBytes": 1
+        "security/detect-pseudoRandomBytes": 1,
+	"ramda/map-simplification": "error"
     },
     "env": {
       "browser": true,
