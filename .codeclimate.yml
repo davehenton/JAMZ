@@ -23,6 +23,9 @@ checks:
 plugins:
   fixme:
     enabled: true
+  eslint:
+    enabled: true
+    channel: "eslint-4"
   rubocop:
     enabled: true
 exclude_patterns:
