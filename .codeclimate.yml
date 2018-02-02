@@ -29,4 +29,4 @@ plugins:
   rubocop:
     enabled: false
 exclude_patterns:
-- "!**/ramda.js"
+- "!ramda.js"
