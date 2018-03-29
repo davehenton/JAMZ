@@ -1,32 +1,54 @@
-version: "2"
+version: "2"         # required to adjust maintainability checks
 checks:
   argument-count:
-    enabled: false
+    config:
+      threshold: 4
   complex-logic:
-    enabled: false
+    config:
+      threshold: 4
   file-lines:
-    enabled: false
+    config:
+      threshold: 250
   method-complexity:
-    enabled: false
+    config:
+      threshold: 5
   method-count:
-    enabled: false
+    config:
+      threshold: 20
   method-lines:
-    enabled: false
+    config:
+      threshold: 25
   nested-control-flow:
-    enabled: false
+    config:
+      threshold: 4
   return-statements:
-    enabled: false
+    config:
+      threshold: 4
   similar-code:
-    enabled: false
+    config:
+      threshold: # language-specific defaults. an override will affect all languages.
   identical-code:
-    enabled: false
-plugins:
-  fixme:
-    enabled: true
-  eslint:
-    enabled: true
-    channel: "eslint-4"
-  rubocop:
-    enabled: false
-exclude_patterns:
-- "public/"
+    config:
+      threshold: # language-specific defaults. an override will affect all languages.
+ exclude_patterns:
+ - "app/assets/fonts/"
+ - "app/assets/images/"
+ - "config/"
+ - "db/"
+ - "dist/"
+ - "features/"
+ - "log/"
+ - "**/node_modules/"
+ - "public/"
+ - "script/"
+ - "spec/"
+ - "vendor/"
+ - "**/test/"
+ - "**/tests/"
+ - "**/vendor/"
+ - "**/*.d.ts"
+ - "**/*.md"
+ - "**/*.yml"
+ - "**/*.config"
+ - "**/__tests__/"
+  
