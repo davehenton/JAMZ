@@ -1,0 +1,27 @@
+   <!-- <p><%=@results[0] + " " + @results[1]%></p>
+            <p><%=@results[2] + " " + @results[3]%></p> -->
+            <!-- <p><%=@results[0]%></p> -->
+
+
+
+                  <!-- <a href= "https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_CLIENT_ID']%>&response_type=code&redirect_uri=http://still-island-96987.herokuapp.com/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email">click here to view your top tracks on Spotify.</a><br> -->
+
+                   <a href= "https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_CLIENT_ID']%>&response_type=code&redirect_uri=https://still-island-96987.herokuapp.com/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email">click here to view your top tracks on Spotify.</a><br><br>
+
+
+                             <p><%=@results %></p>
+          <p><%=@results[0][0] + " - " + @results[0][1]%></p><br>
+            <p><%=@results[0][2] + " - " + @results[0][3]%></p><br>
+
+
+
+            
+#get "/oauth/callback" do 
+#response == Instagram.get_access_token(params[:code], redirect_uri => CALLBACK_URL)
+#user_info = response['user'].to_h
+#user_info['insagram_id'] = response['id']
+
+# unless User.find_by(instagram_id: user_id)
+#   User.create(user_info)
+# end
+#session[:access_token] = response[:access_token]
