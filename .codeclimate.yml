@@ -1,3 +1,4 @@
 plugins:
-  brakeman:
+  rubocop:
     enabled: true
+    channel: rubocop-0-54
