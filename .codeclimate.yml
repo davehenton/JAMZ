@@ -3,4 +3,4 @@ plugins:
     enabled: true
     channel: rubocop-0-54
 exclude_patterns:
-- "!**/*/ramda.js"
+- "**/*/query_helpers.rb"
