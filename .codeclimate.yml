@@ -3,4 +3,4 @@ plugins:
     enabled: true
     channel: rubocop-0-54
 exclude_patterns:
-- "**/*/query_helpers.rb"
+- "!**/*/query_helpers.rb"
