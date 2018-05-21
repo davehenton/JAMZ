@@ -1,6 +1,7 @@
+exclude_patterns:
+- "app/
 plugins:
   rubocop:
     enabled: true
     channel: rubocop-0-54
-exclude_patterns:
-- "!test.rb"
+
