@@ -1,5 +1,8 @@
 exclude_patterns:
-- "app/
+- "app/"
+- "app2/"
+- "db/"
+- "public/"
 plugins:
   rubocop:
     enabled: true
