@@ -1,10 +1,4 @@
-exclude_patterns:
-- "app/"
-- "app2/"
-- "db/"
-- "public/"
 plugins:
-  rubocop:
+  eslint:
     enabled: true
-    channel: rubocop-0-54
-
+    channel: "eslint-4"
