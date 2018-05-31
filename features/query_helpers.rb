@@ -240,3 +240,35 @@ def query_top_tracks(token_code)
 	end
 
 puts
+
+
+
+def destroy(post)
+  if current_user && current_user.admin?
+    post.destroy
+  end
+end
+
+def destroy(post)
+  if current_user && current_user.admin?
+    post.destroy
+  end
+end
+
+def destroy(post)
+  if current_user && current_user.admin?
+    post.destroy
+  end
+end
+
+def destroy(post)
+  if current_user && current_user.admin?
+    post.destroy
+  end
+end
+
+def destroy(post)
+  if current_user && current_user.admin?
+    post.destroy
+  end
+end
