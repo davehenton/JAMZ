@@ -3,4 +3,6 @@ plugins:
     enabled: false
     channel: "eslint-4"
   rubocop:
+    enabled: false
+  fixme:
     enabled: true
