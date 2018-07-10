@@ -1,6 +1,6 @@
 plugins:
   eslint:
-    enabled: true
+    enabled: false
     channel: "eslint-4"
   rubocop:
     enabled: true
