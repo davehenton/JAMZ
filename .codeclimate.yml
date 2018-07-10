@@ -3,4 +3,4 @@ plugins:
     enabled: false
     channel: "eslint-4"
   rubocop:
-    enabled: true
+    enabled: false
