@@ -1,12 +1,5 @@
 plugins:
-  structure:
-    enabled: false
-  duplication:
-    enabled: false
   fixme:
     enabled: true
     issue_override:
       severity: minor
-    config:
-      strings:
-      - FIXME
