@@ -6,7 +6,7 @@ plugins:
   fixme:
     enabled: true
     issue_override:
-      severity: blocker
+      severity: minor
     config:
       strings:
       - FIXME
