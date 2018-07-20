@@ -1,6 +1,12 @@
 plugins:
-  eslint:
+  structure:
     enabled: false
-    channel: "eslint-4"
-  rubocop:
+  duplication:
+    enabled: false
+  fixme:
     enabled: true
+    issue_override:
+      severity: blocker
+    config:
+      strings:
+      - FIXME
