@@ -1,5 +1,5 @@
 plugins:
-  fixme:
+ fixme:
     enabled: true
     issue_override:
-      severity: minor
+      severity: blocker
