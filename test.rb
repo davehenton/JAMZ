@@ -7,3 +7,7 @@
 'in this case "single quotes" is OK'
 
 "i wonder how it feels about #{'this'}"
+
+TODO
+FIXME
+TODO
