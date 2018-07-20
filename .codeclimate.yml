@@ -1,44 +1,5 @@
-engines:
-  rubocop:
+ plugins:
+ fixme:
     enabled: true
-    checks:
-        Rubocop/Metrics/CyclomaticComplexity:
-          enabled: true
-        Rubocop/Metrics/ParameterLists:
-          enabled: true
-        Rubocop/Cop/TooManyLines:
-          enabled: true
-        Rubocop/Metrics/ClassLength:
-          enabled: true
-  eslint:
-    enabled: true
-    config:
-      ignore_warnings: true
-  brakeman:
-    enabled: true
-  bundler-audit:
-    enabled: true
-  golint:
-    enabled: false
-  gofmt:
-    enabled: true
-  eslint:
-    enabled: false
-  csslint:
-    enabled: false
-  duplication:
-    enabled: true
-    config:
-      languages:
-      - ruby:
-      - javascript:
-
-ratings:
-   paths:
-    - "**.rb"
-    - "**.go"
-    - "**.js"
-
-exclude_paths:
-  - spec/**/*
-  - vendor/**/*
+    issue_override:
+      severity: blocker
