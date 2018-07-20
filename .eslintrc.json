@@ -1,0 +1,60 @@
+{ 
+"extends": "airbnb", 
+"env": { 
+"node": false, 
+"jest": false, 
+"browser": true 
+}, 
+"parser": "babel-eslint", 
+"parserOptions": { 
+"ecmaVersion": 6, 
+"sourceType": "module", 
+"ecmaFeatures": { 
+"jsx": true, 
+"es6": true, 
+"forOf": true, 
+"experimentalObjectRestSpread": true 
+} 
+}, 
+"plugins": [ 
+"react" 
+], 
+"rules": { 
+"react/forbid-prop-types": 0, 
+"react/react-in-jsx-scope": 0, 
+"react/jsx-filename-extension": 0, 
+"react/jsx-curly-brace-presence": 0, 
+"react/jsx-no-undef": 0, 
+"no-undef": 0,
+
+"jsx-a11y/anchor-has-content": 0, 
+"jsx-a11y/no-static-element-interactions": 0,
+
+"no-underscore-dangle": 0, 
+"comma-dangle": ["error", "never"], 
+"arrow-parens": ["error", "always"], 
+"indent": ["error", 2, { "SwitchCase": 1, "MemberExpression": "off" }],
+
+"no-plusplus": ["error", { "allowForLoopAfterthoughts": true }] 
+}, 
+"globals": { 
+"_": true, 
+"ActionTypes": true, 
+"Helpers": true, 
+"PropTypes": true, 
+"Presenters": true, 
+"Selectors": true, 
+"React": true, 
+"Actions": true, 
+"Presenter": true, 
+"Models": true, 
+"Components": true, 
+"Immutable": true, 
+"I18n": true, 
+"Field": true, 
+"InvestmentField": true, 
+"FieldNamePresenter": true, 
+"FormFieldComponent": true, 
+"FieldComboBox": true 
+} 
+}

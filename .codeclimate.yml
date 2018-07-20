@@ -1,4 +1,4 @@
- plugins:
+plugins:
  fixme:
     enabled: true
     issue_override:

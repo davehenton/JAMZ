@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>JAMZ</title>
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+        
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="users/new">Sign Up</a></li>
+                  <li><a href="/login">Login</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <p><%=@artists%></p>
+            
+            <p class="lead">
+            <a href="https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_CLIENT_ID']%>&response_type=code&redirect_uri=https://still-island-96987.herokuapp.com/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email"<br><br>
+              <a id="show_artist" href= "/artists">click here to show the top artist on Spotify.</a><br>
+              <a href= "https://accounts.spotify.com/authorize/?client_id=<%=ENV['SPOTIFY_CLIENT_ID']%>&response_type=code&redirect_uri=https://still-island-96987.herokuapp.com/users/landing&scope=user-top-read%20playlist-read-private%20playlist-read-collaborative%20user-read-private%20user-read-email">click here to view your top tracks on Spotify.</a><br>
+            <h1 class="cover-heading"><p id="testAJ"></p></h1>
+            <% if @results %>
+            <p><%=p @results[0] + " - " + @results[1]%></p><br>
+            <p><%=p @results[2] + " - " + @results[3]%></p><br>
+            <% end %>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
