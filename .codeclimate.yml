@@ -1,5 +1,10 @@
 plugins:
- fixme:
+  fixme:
     enabled: true
-    issue_override:
+    config:
+      strings:
+      - FIXME
+      - BUG
+      - CUSTOM
+     issue_override:
       severity: blocker
