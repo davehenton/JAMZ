@@ -3,3 +3,5 @@ plugins:
     enabled: true
     issue_override:
       severity: blocker
+  rubocop:
+    enabled: true
