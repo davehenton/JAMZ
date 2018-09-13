@@ -3,3 +3,7 @@ plugins:
     enabled: true
     issue_override:
       severity: blocker
+  structure:
+    enabled: false
+  duplication:
+    enabled: true
