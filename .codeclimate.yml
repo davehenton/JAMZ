@@ -1,4 +1,7 @@
-plugins:
+plugins: 
+  eslint:
+    enabled: true
+    channel: "eslint-5"
   fixme:
     enabled: true
     issue_override:
