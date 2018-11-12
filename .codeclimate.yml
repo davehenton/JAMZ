@@ -2,11 +2,13 @@ plugins:
   eslint:
     enabled: true
     channel: "eslint-5"
+    config:
+      config: .codeclimate.eslintrc.js
   fixme:
-    enabled: true
+    enabled: false
     issue_override:
       severity: blocker
   structure:
     enabled: false
   duplication:
-    enabled: true
+    enabled: false
