@@ -1,0 +1,7 @@
+plugins:
+  stylelint:
+    enabled: true
+  duplication:
+    enabled: false
+  structure:
+    enabled: false
