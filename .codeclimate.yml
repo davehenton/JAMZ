@@ -1,7 +1,9 @@
 plugins:
   stylelint:
-    enabled: true
+    enabled: false
   duplication:
     enabled: false
   structure:
     enabled: false
+  fixme:
+    enabled: true
