@@ -5,5 +5,7 @@ plugins:
     enabled: false
   structure:
     enabled: false
-  fixme:
+  rubocop:
     enabled: true
+    channel: rubocop-0-62
+      
