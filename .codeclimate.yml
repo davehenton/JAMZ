@@ -5,7 +5,6 @@ plugins:
     enabled: false
   structure:
     enabled: false
-  rubocop:
+  pylint:
     enabled: true
-    channel: rubocop-0-62
-      
+    channel: "beta"
