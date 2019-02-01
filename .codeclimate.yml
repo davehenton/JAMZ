@@ -2,3 +2,7 @@ version: "2"
 plugins:
   duplication:
     enabled: false
+  structure:
+    enabled: false
+  rubocop:
+    enabled: true
