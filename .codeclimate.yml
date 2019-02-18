@@ -1,10 +1,10 @@
 version: "2"
 plugins:
   duplication:
-    enabled: false
-      issue_override:
-        severity: info
+    enabled: true
+    issue_override:
+      severity: info
   structure:
-    enabled: false
-      issue_override:
-        severity: info
+    enabled: true
+    issue_override:
+      severity: info
