@@ -3,8 +3,8 @@ plugins:
   duplication:
     enabled: false
       issue_override:
-      severity: info
+        severity: info
   structure:
     enabled: false
       issue_override:
-      severity: info
+       severity: info
