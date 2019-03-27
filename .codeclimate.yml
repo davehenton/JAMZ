@@ -21,7 +21,7 @@ checks:
     identical-code:
         enabled: true
         config:
-            threshold: 2
+            threshold: 15
 plugins:
   duplication:
     enabled: true
