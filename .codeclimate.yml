@@ -19,11 +19,11 @@ checks:
     similar-code:
         enabled: true
         config:
-            threshold: 15
+            threshold: 2
     identical-code:
         enabled: true
         config:
-            threshold: 15
+            threshold: 2
 plugins:
   duplication:
     enabled: true
