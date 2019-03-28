@@ -17,7 +17,9 @@ checks:
     return-statements:
         enabled: false
     similar-code:
-        enabled: false
+        enabled: true
+        config:
+            threshold: 15
     identical-code:
         enabled: true
         config:
@@ -26,4 +28,4 @@ plugins:
   duplication:
     enabled: true
     config:
-      count_threshold: 16
+      count_threshold: 11
