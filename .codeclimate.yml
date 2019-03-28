@@ -29,3 +29,6 @@ plugins:
     enabled: true
     config:
       count_threshold: 11
+      languages:
+        ruby:
+          mass_threshold: 2
