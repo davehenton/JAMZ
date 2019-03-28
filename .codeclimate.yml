@@ -18,7 +18,6 @@ checks:
         enabled: false
     similar-code:
         enabled: false
-        config:
     identical-code:
         enabled: true
         config:
