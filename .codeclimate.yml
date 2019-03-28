@@ -28,7 +28,7 @@ plugins:
   duplication:
     enabled: true
     config:
-      count_threshold: 11
+      count_threshold: 2
       languages:
         ruby:
           mass_threshold: 70
