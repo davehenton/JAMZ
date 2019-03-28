@@ -18,12 +18,12 @@ checks:
         enabled: false
     similar-code:
         enabled: true
-        config:
-            threshold: 2
+#         config:
+#             threshold: 2
     identical-code:
         enabled: true
-        config:
-            threshold: 2
+#         config:
+#             threshold: 2
 plugins:
   duplication:
     enabled: true
@@ -31,4 +31,4 @@ plugins:
       count_threshold: 11
       languages:
         ruby:
-          mass_threshold: 2
+          mass_threshold: 70
