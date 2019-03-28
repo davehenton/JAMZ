@@ -17,18 +17,14 @@ checks:
     return-statements:
         enabled: false
     similar-code:
-        enabled: true
-#         config:
-#             threshold: 2
+        enabled: false
+        config:
     identical-code:
         enabled: true
-#         config:
-#             threshold: 2
+        config:
+            threshold: 70
 plugins:
   duplication:
     enabled: true
     config:
-      count_threshold: 2
-      languages:
-        ruby:
-          mass_threshold: 70
+      count_threshold: 6
