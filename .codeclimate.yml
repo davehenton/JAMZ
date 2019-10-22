@@ -26,11 +26,9 @@ plugins:
   duplication:
     enabled: true
     issue_override:
-    severity: info
-    config:
-      count_threshold: 6
+        severity: info
    structure: 
     enabled: true
     issue_override:
-    severity: info
+        severity: info
 
