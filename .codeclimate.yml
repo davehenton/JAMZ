@@ -1,20 +1,9 @@
 version: "2"
-checks:
-    argument-count:
+plugins:
+    duplication:
+        enabled: false
+    structure:
+        enabled :false
+    eslint:
         enabled: true
-    complex-logic:
-        enabled: true
-    file-lines:
-        enabled: true
-    method-complexity:
-        enabled: true
-    method-count:
-        enabled: true
-    method-lines:
-        enabled: true
-    nested-control-flow:
-        enabled: true
-    return-statements:
-        enabled: true
-    similar-code:
-        enabled: true
+        channel: "eslint-6"
