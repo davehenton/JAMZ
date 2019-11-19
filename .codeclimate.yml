@@ -7,32 +7,3 @@ plugins:
     eslint:
         enabled: true
         channel: "eslint-6"
-
-
-Hey there, 
-
-
-
-Dave here from Code Climate. We just released a new channel for our ESLint plugin, which supports ESLint v6.1.0. 
-
-
-
-To use the new version, just update your `.codeclimate.yml` with the following:
-
-
-
-plugins: 
-
-  eslint:
-
-    enabled: true
-
-    channel: "eslint-6"
-
-Let me know if you have any questions, or have any issues getting that up and running. I'll be standing by to assist.
-
-
-
-Thanks,
-
-Dave
