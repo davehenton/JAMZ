@@ -1,5 +1,7 @@
 version: "2"
 plugins:
+    pylint:
+        enabled: true
     duplication:
         enabled: false
     structure:
