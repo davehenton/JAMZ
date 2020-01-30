@@ -1,5 +1,7 @@
 plugins:
+  duplication:
+    enabled: false
+  structure:
+    enabled: false
   rubocop:
-    enabled: true
-    issue_override:
-     severity: major
+    enabled: false
