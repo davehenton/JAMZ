@@ -3,3 +3,7 @@ plugins:
     enabled: true
     issue_override:
      severity: major
+  eslint:
+    enabled: true
+    issue_override:
+      severity: info
