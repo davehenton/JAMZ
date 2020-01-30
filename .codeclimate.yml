@@ -1,11 +1,5 @@
-version: "2"
 plugins:
-    pylint:
-        enabled: true
-    duplication:
-        enabled: false
-    structure:
-        enabled : false
-    eslint:
-        enabled: true
-        channel: "eslint-6"
+  rubocop:
+    enabled: true
+    issue_override:
+      severity: info
