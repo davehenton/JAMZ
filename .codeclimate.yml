@@ -4,4 +4,6 @@ plugins:
   structure:
     enabled: false
   rubocop:
-    enabled: false
+    enabled: true
+    issue_override:
+      severity: info
