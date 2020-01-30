@@ -2,4 +2,4 @@ plugins:
   rubocop:
     enabled: true
     issue_override:
-      severity: info
+     severity: major
