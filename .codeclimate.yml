@@ -3,6 +3,8 @@ plugins:
     enabled: false
   structure:
     enabled: false
-  rubocop:
+  codenarc:
     enabled: true
+  rubocop:
+    enabled: false
     channel: rubocop-0-79
