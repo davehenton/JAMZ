@@ -3,6 +3,5 @@ plugins:
     enabled: false
   structure:
     enabled: false
-  rubocop:
+  ember-template-lint:
     enabled: true
-    channel: rubocop-0-79
