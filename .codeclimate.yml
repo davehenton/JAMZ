@@ -5,4 +5,4 @@ plugins:
     enabled: false
   rubocop:
     enabled: true
-    channel: rubocop-0-79
+    channel: rubocop-0-80
