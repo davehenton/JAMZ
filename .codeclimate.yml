@@ -1,8 +1,9 @@
 plugins:
+  checkout_submodules: true
   duplication:
     enabled: false
   structure:
     enabled: false
   rubocop:
-    enabled: true
+    enabled: false
     channel: rubocop-0-80
