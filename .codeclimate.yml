@@ -1,5 +1,7 @@
 checkout_submodules: true
 plugins:
+  phan:
+    checkout_submodules: true
   duplication:
     enabled: false
   structure:
