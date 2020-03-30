@@ -1,5 +1,5 @@
+checkout_submodules: true
 plugins:
-  checkout_submodules: true
   duplication:
     enabled: false
   structure:
