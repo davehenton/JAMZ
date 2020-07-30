@@ -1,11 +1,7 @@
-checkout_submodules: true
 plugins:
-  phan:
-    checkout_submodules: true
   duplication:
     enabled: false
   structure:
     enabled: false
-  rubocop:
-    enabled: false
-    channel: rubocop-0-80
+  fixme:
+    enabled: true
