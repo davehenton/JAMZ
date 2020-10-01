@@ -5,3 +5,6 @@ plugins:
     enabled: false
   fixme:
     enabled: true
+  phan:
+    channel: "beta"
+    enabled: true
