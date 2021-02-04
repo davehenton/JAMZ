@@ -1281,3 +1281,4 @@ FIXME
 ## add new comment after new master commit
 BUG
 HACK
+## adding comment after selecting "post only once"
