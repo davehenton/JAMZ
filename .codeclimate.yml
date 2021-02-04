@@ -5,6 +5,8 @@ plugins:
     enabled: false
   fixme:
     enabled: true
+    issue_override:
+      severity: major
   rubocop:
-    enabled: true
+    enabled: false
     channel: rubocop-1-70
