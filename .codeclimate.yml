@@ -3,10 +3,6 @@ plugins:
     enabled: false
   structure:
     enabled: false
-  fixme:
+  codeclimate-ktlint:
     enabled: true
-    issue_override:
-      severity: major
-  rubocop:
-    enabled: false
-    channel: rubocop-1-70
+  
