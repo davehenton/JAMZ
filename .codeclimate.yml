@@ -4,14 +4,6 @@ plugins:
   sonar-php:
     enabled: true
 - exclude_patterns:
-- config/
-- db/
-- dist/
-- features/
-- **/node_modules/
-- script/
-- **/spec/
-- **/test/
-- **/tests/
+- "config/"
 
   
