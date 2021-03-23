@@ -3,7 +3,7 @@ plugins:
     enabled: false
   sonar-php:
     enabled: true
-- exclude_patterns:
-- "config/"
+exclude_patterns:
+- config/
 
   
