@@ -4,6 +4,6 @@ plugins:
   sonar-php:
     enabled: true
 exclude_patterns:
-- config/
+- "config/"
 
   
