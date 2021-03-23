@@ -1,8 +1,17 @@
 plugins:
-  duplication:
-    enabled: false
   structure:
     enabled: false
-  codeclimate-ktlint:
+  sonar-php:
     enabled: true
+- exclude_patterns:
+- config/
+- db/
+- dist/
+- features/
+- **/node_modules/
+- script/
+- **/spec/
+- **/test/
+- **/tests/
+
   
