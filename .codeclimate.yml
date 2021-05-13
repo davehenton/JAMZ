@@ -2,6 +2,8 @@ version: "2"
 plugins:
   rubocop:
     enabled: true
+    exclude_patterns:
+    - "test/"
 checks:
   argument-count:
     config:
@@ -34,6 +36,7 @@ checks:
     config:
       threshold: # language-specific defaults. an override will affect all languages.
 exclude_patterns:
+- "app/"
 - "config/"
 - "db/"
 - "dist/"
