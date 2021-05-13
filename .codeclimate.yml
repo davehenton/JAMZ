@@ -4,6 +4,8 @@ plugins:
     enabled: true
     exclude_patterns:
     - 'test/'
+  reek:
+    enabled: true
 checks:
   argument-count:
     config:
