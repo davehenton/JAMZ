@@ -30,7 +30,9 @@ checks:
   identical-code:
     config:
       threshold: # language-specific defaults. an override will affect all languages.
-exclude_patterns:
+plugins:
+  rubocop:
+    enabled: true
 - "config/"
 - "db/"
 - "dist/"
