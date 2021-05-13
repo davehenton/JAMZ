@@ -1,4 +1,7 @@
 version: "2"
+plugins:
+  rubocop:
+    enabled: true
 checks:
   argument-count:
     config:
@@ -30,9 +33,7 @@ checks:
   identical-code:
     config:
       threshold: # language-specific defaults. an override will affect all languages.
-plugins:
-  rubocop:
-    enabled: true
+
 - "config/"
 - "db/"
 - "dist/"
