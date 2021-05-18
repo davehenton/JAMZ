@@ -1,3 +1,8 @@
+TODO
+BUG
+TODO
+INFO
+
 def describe
   first_name +  middle_name + last_name
 end
