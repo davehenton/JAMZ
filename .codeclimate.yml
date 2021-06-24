@@ -1,0 +1,4 @@
+plugins:
+  pmd:
+    enabled: true
+    channel: beta
