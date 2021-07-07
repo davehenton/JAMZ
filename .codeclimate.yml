@@ -1,4 +1,4 @@
 plugins:
-  pmd:
+  rubocop:
     enabled: true
-    channel: beta
+    channel: rubocop-1-18-3
