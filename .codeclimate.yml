@@ -2,3 +2,8 @@ plugins:
   rubocop:
     enabled: true
     channel: rubocop-1-18-3
+  phpcodesniffer:
+    enabled: true
+    channel: beta
+    config:
+      ignore_warnings: true
