@@ -1,42 +1,10 @@
 version: "2"
-checks:
-  argument-count:
+plugins: 
+  structure:
     enabled: true
     issue_override:
       severity: info
-  complex-logic:
-    enabled: true
-    issue_override:
-      severity: info
-  file-lines:
-    enabled: true
-    issue_override:
-      severity: info
-  method-complexity:
-    enabled: true
-    issue_override:
-      severity: info
-  method-count:
-    enabled: true
-    issue_override:
-      severity: info
-  method-lines:
-    enabled: true
-    issue_override:
-      severity: info
-  nested-control-flow:
-    enabled: true
-    issue_override:
-      severity: info
-  return-statements:
-    enabled: true
-    issue_override:
-      severity: info
-  similar-code:
-    enabled: true
-    issue_override:
-      severity: info
-  identical-code:
+  duplication:
     enabled: true
     issue_override:
       severity: info
