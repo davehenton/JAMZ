@@ -1,9 +1,42 @@
-plugins:
-  rubocop:
+version: "2"
+checks:
+  argument-count:
     enabled: true
-    channel: rubocop-1-18-3
-  phpcodesniffer:
+    issue_override:
+      severity: info
+  complex-logic:
     enabled: true
-    channel: beta
-    config:
-      ignore_warnings: true
+    issue_override:
+      severity: info
+  file-lines:
+    enabled: true
+    issue_override:
+      severity: info
+  method-complexity:
+    enabled: true
+    issue_override:
+      severity: info
+  method-count:
+    enabled: true
+    issue_override:
+      severity: info
+  method-lines:
+    enabled: true
+    issue_override:
+      severity: info
+  nested-control-flow:
+    enabled: true
+    issue_override:
+      severity: info
+  return-statements:
+    enabled: true
+    issue_override:
+      severity: info
+  similar-code:
+    enabled: true
+    issue_override:
+      severity: info
+  identical-code:
+    enabled: true
+    issue_override:
+      severity: info
