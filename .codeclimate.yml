@@ -7,4 +7,15 @@ plugins:
   eslint:
     enabled: true
     channel: "eslint-6"
+  editorconfig:
+    enabled: true
+  fixme:
+    enabled: true
+  markdownlint:
+    enabled: true
+  nodesecurity:
+    enabled: true
+  shellcheck:
+    enabled: true
+    
     
