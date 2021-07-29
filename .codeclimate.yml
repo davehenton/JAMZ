@@ -1,42 +1,10 @@
 version: "2"
-checks:
-  argument-count:
+plugins:
+  duplication:
     enabled: false
-    issue_override:
-      severity: info
-  complex-logic:
-    enabled: false
-    issue_override:
-      severity: info
-  file-lines:
-    enabled: false
-    issue_override:
-      severity: info
-  method-complexity:
-    enabled: false
-    issue_override:
-      severity: info
-  method-count:
-    enabled: false
-    issue_override:
-      severity: info
-  method-lines:
-    enabled: false
-    issue_override:
-      severity: info
-  nested-control-flow:
-    enabled: false
-    issue_override:
-      severity: info
-  return-statements:
-    enabled: false
-    issue_override:
-      severity: info
-  similar-code:
+  structure:
     enabled: true
-    issue_override:
-      severity: info
-  identical-code:
+  eslint:
     enabled: true
-    issue_override:
-      severity: info
+    channel: "eslint-6"
+    
