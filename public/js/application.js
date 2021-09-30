@@ -10,3 +10,8 @@ $("#show_artist").click(function(event){
     });
   });
 });
+
+adding some stuff here
+and there
+and over here
+and one more
