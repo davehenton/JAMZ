@@ -2,4 +2,4 @@ version: "2"
 plugins:
   flog:
     enabled: true
-    channal: "beta"
+    channel: "beta"
