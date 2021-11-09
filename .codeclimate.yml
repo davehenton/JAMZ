@@ -5,3 +5,5 @@ plugins:
     enabled: false
   brakeman:
     enabled: true
+  ktlint:
+    enabled: true
