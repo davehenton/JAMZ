@@ -3,7 +3,6 @@ plugins:
     enabled: false
   structure:
     enabled: false
-  brakeman:
+  pmd:
     enabled: true
-  ktlint:
-    enabled: true
+    channel: "beta"
