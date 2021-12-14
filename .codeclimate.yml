@@ -3,6 +3,5 @@ plugins:
     enabled: false
   structure:
     enabled: false
-  pmd:
+  brakeman:
     enabled: true
-    channel: "beta"
