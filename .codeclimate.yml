@@ -1,7 +1,0 @@
-plugins:
-  duplication:
-    enabled: false
-  structure:
-    enabled: false
-  brakeman:
-    enabled: true
