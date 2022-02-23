@@ -1,0 +1,12 @@
+plugins:
+  duplication:
+    enabled: false
+  structure:
+    enabled: false
+  flog:
+    enabled: true
+    config:
+      score_threshold: 34.0
+    exclude_patterns:
+    - "**/spec/**/*"
+
