@@ -1,3 +1,4 @@
+version: "2"
 plugins:
   duplication:
     enabled: false
@@ -7,4 +8,6 @@ plugins:
     enabled: true
     config:
       score_threshold: 34.0
+    exclude_patterns:
+    - "**/spec/**/*"
 
