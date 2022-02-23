@@ -5,7 +5,7 @@ plugins:
     config:
       score_threshold: 34.0
     exclude_paths:
-    - **/spec/
+    - "**/spec/"
   duplication:
     enabled: false
   structure:
