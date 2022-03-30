@@ -1,7 +1,7 @@
 version: "2"
 plugins:
   flog:
-    enabled: true
+    enabled: false
     config:
       score_threshold: 34.0
     exclude_patterns:
@@ -10,5 +10,7 @@ plugins:
     enabled: false
   structure:
     enabled: false
+  fixme:
+    enabled: true
 
 
