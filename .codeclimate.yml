@@ -12,5 +12,8 @@ plugins:
     enabled: false
   fixme:
     enabled: true
+  eslint:
+    enabled: true
+    channel: "eslint-7"
 
 
