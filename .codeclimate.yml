@@ -6,5 +6,5 @@ plugins:
       severity: info
   structure:
     enabled: true
-      issue_override:
+    issue_override:
       severity: info
