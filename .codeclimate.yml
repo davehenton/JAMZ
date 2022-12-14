@@ -33,18 +33,17 @@ checks:
     config:
       threshold: 4
   similar-code:
-    enabled: true
+    enabled: false
     config:
       threshold: #language-specific defaults. overrides affect all languages.
   identical-code:
-    enabled: true
+    enabled: false
     config:
       threshold: #language-specific defaults. overrides affect all languages.
 plugins:
- rubocop:
-  enabled: true
- eslint:
-  enabled: true
+  brakeman:
+    channel: beta
+    enabled: true
 exclude_patterns:
 - "config/"
 - "db/"
@@ -57,6 +56,3 @@ exclude_patterns:
 - "**/tests/"
 - "**/vendor/"
 - "**/*.d.ts"
-
---
-Dave Henton, Senior Support Specialist / 615-268-9188 / We're hiring!
