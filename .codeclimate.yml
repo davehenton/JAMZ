@@ -1,0 +1,4 @@
+plugins:
+  eslint:
+    channel: eslint-8
+    enabled: true
