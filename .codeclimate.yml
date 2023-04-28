@@ -1,4 +1,4 @@
 plugins:
-  eslint:
-    channel: eslint-8
+  brakeman:
+    channel: brakeman-5-4-1
     enabled: true
