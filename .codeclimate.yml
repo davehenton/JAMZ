@@ -1,4 +1,4 @@
 plugins:
   brakeman:
-    channel: brakeman-5-4-1
+    channel: brakeman-6-1-1
     enabled: true
