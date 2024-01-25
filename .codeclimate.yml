@@ -1,5 +1,9 @@
 plugins:
  duplication:
   enabled: true
+  issue_override:
+   severity: info
  structure:
   enabled: true
+  issue_override:
+   severity: info
