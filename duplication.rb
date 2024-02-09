@@ -28,3 +28,5 @@ module DuplicationExample
     hex
   end
 end
+
+asdf
