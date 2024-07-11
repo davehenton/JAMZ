@@ -1,2 +1,8 @@
 plugins:
- asdfasdfasdfasdfasdf
+ duplication:
+  enabled: false
+ structure:
+  enabled: false
+ brakeman:
+  enabled: true
+  channel: brakeman-6-0-1
