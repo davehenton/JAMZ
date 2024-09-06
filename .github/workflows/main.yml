@@ -1,0 +1,4 @@
+- uses: qltyai/qlty-action/coverage@main
+  with:
+    coverage-token: {{secrets.QLTY_COVERAGE_TOKEN}}
+    file: coverage/.resultset.json
