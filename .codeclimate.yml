@@ -31,8 +31,6 @@ checks:
     config:
       threshold: # language-specific defaults. an override will affect all languages.
 plugins:
-  eslint:
-    enabled: true
   fixme:
     enabled: true
     config:
