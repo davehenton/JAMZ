@@ -33,5 +33,12 @@ checks:
 plugins:
   eslint:
     enabled: true
+  fixme:
+    enabled: true
+    config:
+      strings:
+      - FIXME
+      - BUG
+      - CUSTOM
 exclude_patterns:
   - "spec/"
