@@ -1,4 +1,6 @@
 version: "2"         # required to adjust maintainability checks
+exclude_patterns:
+  - "spec/"
 checks:
   argument-count:
     config:
@@ -38,5 +40,3 @@ plugins:
       - FIXME
       - BUG
       - CUSTOM
-exclude_patterns:
-  - "spec/"
